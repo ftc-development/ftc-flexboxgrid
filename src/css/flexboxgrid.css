@@ -1,7 +1,7 @@
 :root {
 
 	--xs-min: 0;
-	--sm-min: 36;
+	--sm-min: 30;
 	--md-min: 48;
 	--lg-min: 62;
 	--xl-min: 75;
@@ -13,13 +13,13 @@
 	--screen-lg-min: var(--lg-min)rem;
 	--screen-xl-min: var(--xl-min)rem;
 
-	--container-sm: 45rem;
-	--container-md: 45rem;
-	--container-lg: 58.75rem;
-	--container-xl: 71.25rem
+	--container-sm: 46.75rem;
+	--container-md: 46.875rem;
+	--container-lg: 60.625rem;
+	--container-xl: 73.125rem
 }
 
-@custom-media --sm-viewport only screen and (min-width: 36rem);
+@custom-media --sm-viewport only screen and (min-width: 30rem);
 @custom-media --md-viewport only screen and (min-width: 48rem);
 @custom-media --lg-viewport only screen and (min-width: 62rem);
 @custom-media --xl-viewport only screen and (min-width: 75rem);
@@ -28,10 +28,11 @@
 .container-fluid,
 .container {
 	width: 100%;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 0.9375rem;
+	padding-left: 0.9375rem;
 	margin-right: auto;
 	margin-left: auto;
+	box-sizing: border-box;
 }
 
 .container-fluid {
@@ -248,8 +249,8 @@
 
 @media only screen and (max-width: 48rem) {
 	.container {
-		max-width: 45rem;
-		width:auto;
+		max-width: 46.75rem;
+		width: auto;
 	}
 }
 
@@ -447,7 +448,7 @@
 
 @media (--md-viewport) {
 	.container {
-		width: var(--container-md, 45rem);
+		width: var(--container-md, 46.875rem);
 	}
 
 	.col-md,
@@ -837,6 +838,6 @@
 
 @media (--xl-viewport) {
 	.container {
-		width: var(--container-xl, 69.375rem);
+		width: var(--container-xl, 73.125rem);
 	}
 }
