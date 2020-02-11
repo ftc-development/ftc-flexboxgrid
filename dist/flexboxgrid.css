@@ -253,7 +253,7 @@
 
 @media only screen and (max-width: 48rem) {
   .container {
-    max-width: 46.75rem;
+    max-width: 46.875rem;
     width: auto;
   }
 }
